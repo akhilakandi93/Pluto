@@ -22,8 +22,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image Content Analysis🔍" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBi-3R-6WG">
-                                <rect key="frame" x="53.5" y="50" width="269" height="27.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image Analyzer🔍" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBi-3R-6WG">
+                                <rect key="frame" x="96" y="50" width="184.5" height="27.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -119,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-831" y="-98"/>
+            <point key="canvasLocation" x="-753" y="-99"/>
         </scene>
         <!--Picture View Controller-->
         <scene sceneID="Rea-DI-0Kd">
@@ -154,15 +154,23 @@
                                     <constraint firstAttribute="height" constant="260" id="rFT-8S-C2A"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Face Result" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sks-L5-wCi">
-                                <rect key="frame" x="75" y="539" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.97872814119999996" green="0.89604772509999997" blue="0.2714976368" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Detecting Faces..." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Sks-L5-wCi">
+                                <rect key="frame" x="87.5" y="495" width="200" height="100"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="0z1-V6-jOQ"/>
+                                    <constraint firstAttribute="height" constant="100" id="Euz-wy-PMm"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Label Result" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IAQ-Tf-amu">
-                                <rect key="frame" x="75" y="383" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.97872814119999996" green="0.89604772509999997" blue="0.2714976368" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Scanning Image..." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IAQ-Tf-amu">
+                                <rect key="frame" x="87.5" y="380" width="200" height="100"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="YXq-au-nfw"/>
+                                    <constraint firstAttribute="width" constant="200" id="pO4-4d-aR3"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -173,15 +181,18 @@
                             <constraint firstItem="Sks-L5-wCi" firstAttribute="centerX" secondItem="73g-X5-9cU" secondAttribute="centerX" id="5N0-9f-H3K"/>
                             <constraint firstItem="clT-vG-a4r" firstAttribute="leading" secondItem="73g-X5-9cU" secondAttribute="leadingMargin" constant="15" id="6s9-KR-7aW"/>
                             <constraint firstItem="clT-vG-a4r" firstAttribute="top" secondItem="xhA-Rn-DZi" secondAttribute="bottom" constant="15" id="UCp-FI-Klp"/>
-                            <constraint firstItem="IAQ-Tf-amu" firstAttribute="top" secondItem="wg8-v6-3Uk" secondAttribute="bottom" constant="15" id="Ztr-3e-Cic"/>
+                            <constraint firstItem="Sks-L5-wCi" firstAttribute="top" secondItem="IAQ-Tf-amu" secondAttribute="bottom" constant="5" id="cLC-ok-Wx1"/>
                             <constraint firstItem="wg8-v6-3Uk" firstAttribute="centerX" secondItem="73g-X5-9cU" secondAttribute="centerX" id="gVL-wD-tdC"/>
                             <constraint firstItem="wg8-v6-3Uk" firstAttribute="top" secondItem="clT-vG-a4r" secondAttribute="bottom" constant="30" id="iPr-8h-GKh"/>
                             <constraint firstItem="Sks-L5-wCi" firstAttribute="top" secondItem="IAQ-Tf-amu" secondAttribute="bottom" constant="15" id="u43-h4-qJi"/>
+                            <constraint firstItem="IAQ-Tf-amu" firstAttribute="top" secondItem="wg8-v6-3Uk" secondAttribute="bottom" constant="5" id="vhI-8h-1mj"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="detailPic" destination="wg8-v6-3Uk" id="UFS-so-AwD"/>
+                        <outlet property="faceResults" destination="Sks-L5-wCi" id="sxt-PM-jvh"/>
                         <outlet property="goBack" destination="clT-vG-a4r" id="gqX-CE-CRz"/>
+                        <outlet property="labelResults" destination="IAQ-Tf-amu" id="qUG-D4-4SJ"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goHome" id="5Je-J3-LSq"/>
                     </connections>
                 </viewController>

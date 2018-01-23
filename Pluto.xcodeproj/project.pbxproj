@@ -15,8 +15,10 @@
 		26D4E6662015690300AE12CF /* PlutoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4E6652015690300AE12CF /* PlutoTests.swift */; };
 		26D4E6712015690300AE12CF /* PlutoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4E6702015690300AE12CF /* PlutoUITests.swift */; };
 		26D4E67F20156B8600AE12CF /* AE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26D4E67E20156B8600AE12CF /* AE.jpg */; };
-		26E852A72016ABDA00C03860 /* AK.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26E852A62016ABDA00C03860 /* AK.jpg */; };
 		26E852A92016AEAF00C03860 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E852A82016AEAF00C03860 /* PictureViewController.swift */; };
+		26E852AB2016C4AF00C03860 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E852AA2016C4AF00C03860 /* SwiftyJSON.framework */; };
+		26E852AD2016D05B00C03860 /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26E852AC2016D05B00C03860 /* logo.jpg */; };
+		E0685FF188F7BC6475D40CDC /* Pods_Pluto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B15CD2481E0D6DEE157AF7 /* Pods_Pluto.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16C518989DB6D26E583C8F5A /* Pods-Pluto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pluto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pluto/Pods-Pluto.debug.xcconfig"; sourceTree = "<group>"; };
 		26D4E64D2015690300AE12CF /* Pluto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pluto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D4E6502015690300AE12CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26D4E6522015690300AE12CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,8 +54,13 @@
 		26D4E6702015690300AE12CF /* PlutoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlutoUITests.swift; sourceTree = "<group>"; };
 		26D4E6722015690300AE12CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26D4E67E20156B8600AE12CF /* AE.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = AE.jpg; path = ../../../../Downloads/AE.jpg; sourceTree = "<group>"; };
-		26E852A62016ABDA00C03860 /* AK.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = AK.jpg; path = ../../../../Downloads/AK.jpg; sourceTree = "<group>"; };
 		26E852A82016AEAF00C03860 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		26E852AA2016C4AF00C03860 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/Pluto-gfaqqrcsclaojocojqmfzajbjxnu/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		26E852AC2016D05B00C03860 /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logo.jpg; path = ../../../../Downloads/logo.jpg; sourceTree = "<group>"; };
+		403AF99A776A6EE958E58647 /* Pods-Pluto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pluto.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pluto/Pods-Pluto.release.xcconfig"; sourceTree = "<group>"; };
+		8FF9488CF980CDC184B7C63B /* Pods_PlutoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlutoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2B449C678D4579DEEE5F823 /* Pods_PlutoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlutoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4B15CD2481E0D6DEE157AF7 /* Pods_Pluto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pluto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26E852AB2016C4AF00C03860 /* SwiftyJSON.framework in Frameworks */,
+				E0685FF188F7BC6475D40CDC /* Pods_Pluto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C5D855EE1A24DAB52C7DB8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16C518989DB6D26E583C8F5A /* Pods-Pluto.debug.xcconfig */,
+				403AF99A776A6EE958E58647 /* Pods-Pluto.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		26D4E6442015690300AE12CF = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +106,8 @@
 				26D4E6642015690300AE12CF /* PlutoTests */,
 				26D4E66F2015690300AE12CF /* PlutoUITests */,
 				26D4E64E2015690300AE12CF /* Products */,
+				1C5D855EE1A24DAB52C7DB8F /* Pods */,
+				F82EED08DB6F209A6B3AF8E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,7 +124,7 @@
 		26D4E64F2015690300AE12CF /* Pluto */ = {
 			isa = PBXGroup;
 			children = (
-				26E852A62016ABDA00C03860 /* AK.jpg */,
+				26E852AC2016D05B00C03860 /* logo.jpg */,
 				26D4E6502015690300AE12CF /* AppDelegate.swift */,
 				26D4E6522015690300AE12CF /* ViewController.swift */,
 				26D4E6542015690300AE12CF /* Main.storyboard */,
@@ -134,6 +155,17 @@
 			path = PlutoUITests;
 			sourceTree = "<group>";
 		};
+		F82EED08DB6F209A6B3AF8E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26E852AA2016C4AF00C03860 /* SwiftyJSON.framework */,
+				C4B15CD2481E0D6DEE157AF7 /* Pods_Pluto.framework */,
+				C2B449C678D4579DEEE5F823 /* Pods_PlutoTests.framework */,
+				8FF9488CF980CDC184B7C63B /* Pods_PlutoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26D4E6752015690300AE12CF /* Build configuration list for PBXNativeTarget "Pluto" */;
 			buildPhases = (
+				06E437CF0503F263169F8519 /* [CP] Check Pods Manifest.lock */,
 				26D4E6492015690300AE12CF /* Sources */,
 				26D4E64A2015690300AE12CF /* Frameworks */,
 				26D4E64B2015690300AE12CF /* Resources */,
+				5AC84590DBBE6D16D3B71313 /* [CP] Embed Pods Frameworks */,
+				5FC12FD6702B12AC81EDCAAF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,9 +277,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				26D4E65B2015690300AE12CF /* LaunchScreen.storyboard in Resources */,
+				26E852AD2016D05B00C03860 /* logo.jpg in Resources */,
 				26D4E6582015690300AE12CF /* Assets.xcassets in Resources */,
 				26D4E6562015690300AE12CF /* Main.storyboard in Resources */,
-				26E852A72016ABDA00C03860 /* AK.jpg in Resources */,
 				26D4E67F20156B8600AE12CF /* AE.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +299,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06E437CF0503F263169F8519 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pluto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AC84590DBBE6D16D3B71313 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pluto/Pods-Pluto-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pluto/Pods-Pluto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FC12FD6702B12AC81EDCAAF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pluto/Pods-Pluto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		26D4E6492015690300AE12CF /* Sources */ = {
@@ -422,6 +511,7 @@
 		};
 		26D4E6762015690300AE12CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16C518989DB6D26E583C8F5A /* Pods-Pluto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Pluto/Info.plist;
@@ -434,6 +524,7 @@
 		};
 		26D4E6772015690300AE12CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 403AF99A776A6EE958E58647 /* Pods-Pluto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Pluto/Info.plist;
